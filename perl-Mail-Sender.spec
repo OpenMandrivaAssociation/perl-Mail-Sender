@@ -1,7 +1,7 @@
 %define	module	Mail-Sender
 %define	name	perl-%{module}
 %define version 0.8.13
-%define release %mkrel 1
+%define release %mkrel 2
 
 %define	_requires_exceptions perl(Win32API::Registry)
 
@@ -29,7 +29,8 @@ SMTP server.  This module will not work with qmail servers, however.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-%make
+echo "N
+" | %make
 
 %check
 %{__make} test
