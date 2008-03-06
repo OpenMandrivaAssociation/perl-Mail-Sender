@@ -1,7 +1,7 @@
 %define	module	Mail-Sender
 %define	name	perl-%{module}
 %define version 0.8.13
-%define release %mkrel 2
+%define release %mkrel 3
 
 %define	_requires_exceptions perl(Win32API::Registry)
 
