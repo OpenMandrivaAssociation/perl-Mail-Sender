@@ -8,9 +8,7 @@ License:	GPL
 Group:		Development/Perl
 Source:		http://search.cpan.org/CPAN/authors/id/J/JE/JENDA/%{module}-%{version}.tar.bz2
 Url:            http://search.cpan.org/dist/%{module}/
-%if %{mdkversion} < 1010
 BuildRequires:	perl-devel
-%endif
 Buildarch:	noarch
 
 %description
