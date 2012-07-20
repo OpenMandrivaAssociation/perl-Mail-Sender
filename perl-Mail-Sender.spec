@@ -1,13 +1,8 @@
 %define	module	Mail-Sender
-%define	name	perl-%{module}
-%define version 0.8.16
-%define release %mkrel 5
 
-%define	_requires_exceptions perl(Win32API::Registry)
-
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		perl-%module
+Version:	0.8.16
+Release:	6
 Summary:	Module for sending mails with attachments through an SMTP server 
 License:	GPL
 Group:		Development/Perl
@@ -17,7 +12,6 @@ Url:            http://search.cpan.org/dist/%{module}/
 BuildRequires:	perl-devel
 %endif
 Buildarch:	noarch
-Buildroot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Mail-Sender is a Perl module for sending mail with attachments through an
@@ -26,6 +20,8 @@ SMTP server.  This module will not work with qmail servers, however.
 
 %prep
 %setup -q -n %{module}-%{version}
+rm -f Sender/CType/Win32.pm
+sed -i -e '/Win32.pm/d' MANIFEST
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
