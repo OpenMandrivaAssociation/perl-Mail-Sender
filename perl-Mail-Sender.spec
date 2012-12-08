@@ -42,3 +42,49 @@ rm -rf %{buildroot}
 %{_mandir}/*/*
 
 
+
+
+%changelog
+* Fri Jul 20 2012 Bernhard Rosenkraenzer <bero@bero.eu> 0.8.16-6
++ Revision: 810445
+- Adjust buildrequirements
+- Don't package Win32 specific files
+
+* Sun Jan 22 2012 Oden Eriksson <oeriksson@mandriva.com> 0.8.16-5
++ Revision: 765432
+- rebuilt for perl-5.14.2
+
+* Sat Jan 21 2012 Oden Eriksson <oeriksson@mandriva.com> 0.8.16-4
++ Revision: 763947
+- rebuilt for perl-5.14.x
+
+* Wed May 04 2011 Oden Eriksson <oeriksson@mandriva.com> 0.8.16-3
++ Revision: 667254
+- mass rebuild
+
+* Thu Sep 03 2009 Christophe Fergeau <cfergeau@mandriva.com> 0.8.16-2mdv2011.0
++ Revision: 426523
+- rebuild
+
+* Tue Jul 15 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.8.16-1mdv2009.0
++ Revision: 235776
+- update to new version 0.8.16
+
+* Wed Jun 18 2008 Thierry Vignaud <tv@mandriva.org> 0.8.13-4mdv2009.0
++ Revision: 223810
+- rebuild
+
+* Thu Mar 06 2008 Oden Eriksson <oeriksson@mandriva.com> 0.8.13-3mdv2008.1
++ Revision: 180469
+- rebuild
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Sat May 05 2007 Olivier Thauvin <nanardon@mandriva.org> 0.8.13-2mdv2008.0
++ Revision: 23365
+- make build non interactive
+
