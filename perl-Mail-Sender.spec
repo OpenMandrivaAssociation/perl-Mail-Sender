@@ -2,11 +2,11 @@
 
 Summary:	Module for sending mails with attachments through an SMTP server 
 Name:		perl-%{module}
-Version:	0.8.16
-Release:	11
+Version:	%perl_convert_version 0.8.22
+Release:	1
 License:	GPLv2
 Group:		Development/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/J/JE/JENDA/%{module}-%{version}.tar.bz2
+Source0:	http://search.cpan.org/CPAN/authors/id/J/JE/JENDA/Mail-Sender-%{version}.tar.gz
 Url:		http://search.cpan.org/dist/%{module}/
 BuildArch:	noarch
 BuildRequires:	perl-devel
@@ -35,4 +35,5 @@ echo "N
 %files
 %{perl_vendorlib}/Mail
 %{_mandir}/man3/*
+
 
