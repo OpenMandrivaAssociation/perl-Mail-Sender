@@ -2,7 +2,7 @@
 
 Name:		perl-%module
 Version:	0.8.16
-Release:	7
+Release:	8
 Summary:	Module for sending mails with attachments through an SMTP server 
 License:	GPL
 Group:		Development/Perl
