@@ -2,11 +2,11 @@
 
 Summary:	Module for sending mails with attachments through an SMTP server 
 Name:		perl-%{module}
-Version:	%perl_convert_version 0.8.23
-Release:	4
+Version:	0.903
+Release:	1
 License:	GPLv2
 Group:		Development/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/J/JE/JENDA/Mail-Sender-%{version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/C/CA/CAPOEIRAB/Mail-Sender-%{version}.tar.gz
 Url:		http://search.cpan.org/dist/%{module}/
 BuildArch:	noarch
 BuildRequires:	perl-devel
@@ -24,7 +24,7 @@ sed -i -e '/Win32.pm/d' MANIFEST
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
 echo "N
-" | %make
+" | make
 
 %check
 %make test
