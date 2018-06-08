@@ -10,6 +10,7 @@ Source0:	http://search.cpan.org/CPAN/authors/id/C/CA/CAPOEIRAB/Mail-Sender-%{ver
 Url:		http://search.cpan.org/dist/%{module}/
 BuildArch:	noarch
 BuildRequires:	perl-devel
+BuildRequires:	perl(Test::More)
 
 %description
 Mail-Sender is a Perl module for sending mail with attachments through an
