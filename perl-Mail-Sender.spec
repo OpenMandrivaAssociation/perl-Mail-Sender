@@ -19,7 +19,7 @@ SMTP server.  This module will not work with qmail servers, however.
 
 %prep
 %setup -qn %{module}-%{version}
-rm -f Sender/CType/Win32.pm
+rm -f lib/Mail/Sender/CType/Win32.pm
 sed -i -e '/Win32.pm/d' MANIFEST
 
 %build
