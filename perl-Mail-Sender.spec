@@ -3,7 +3,7 @@
 Summary:	Module for sending mails with attachments through an SMTP server 
 Name:		perl-%{module}
 Version:	0.903
-Release:	1
+Release:	2
 License:	GPLv2
 Group:		Development/Perl
 Source0:	http://search.cpan.org/CPAN/authors/id/C/CA/CAPOEIRAB/Mail-Sender-%{version}.tar.gz
