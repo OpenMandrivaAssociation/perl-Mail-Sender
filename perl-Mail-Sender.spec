@@ -7,7 +7,7 @@ Release:	3
 License:	GPLv2
 Group:		Development/Perl
 Source0:	http://search.cpan.org/CPAN/authors/id/C/CA/CAPOEIRAB/Mail-Sender-%{version}.tar.gz
-Url:		http://search.cpan.org/dist/%{module}/
+Url:		https://search.cpan.org/dist/%{module}/
 BuildArch:	noarch
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
