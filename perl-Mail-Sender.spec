@@ -9,6 +9,7 @@ Group:		Development/Perl
 Source0:	http://search.cpan.org/CPAN/authors/id/C/CA/CAPOEIRAB/Mail-Sender-%{version}.tar.gz
 Url:		https://search.cpan.org/dist/%{module}/
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
 
